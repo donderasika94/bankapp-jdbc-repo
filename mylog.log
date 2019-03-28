@@ -1,0 +1,37 @@
+2019-03-28 11:44:32 -0 - [main] ERROR com.capgemini.bankapp.util.DbUtil  -SQLException 
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Connection.close() has already been called. Invalid operation in this state.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:985)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:927)
+	at com.mysql.jdbc.ConnectionImpl.getMutex(ConnectionImpl.java:3015)
+	at com.mysql.jdbc.ConnectionImpl.commit(ConnectionImpl.java:1521)
+	at com.capgemini.bankapp.util.DbUtil.commit(DbUtil.java:36)
+	at com.capgemini.bankapp.service.impl.BankAccountServiceImpl.addNewBankAccount(BankAccountServiceImpl.java:72)
+	at com.capgemini.bankapp.client.BankAccountClient.main(BankAccountClient.java:43)
+2019-03-28 11:57:24 -772515 - [main] ERROR com.capgemini.bankapp.util.DbUtil  -SQLException 
+com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: Connection.close() has already been called. Invalid operation in this state.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:985)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:957)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:927)
+	at com.mysql.jdbc.ConnectionImpl.getMutex(ConnectionImpl.java:3015)
+	at com.mysql.jdbc.ConnectionImpl.commit(ConnectionImpl.java:1521)
+	at com.capgemini.bankapp.util.DbUtil.commit(DbUtil.java:36)
+	at com.capgemini.bankapp.service.impl.BankAccountServiceImpl.addNewBankAccount(BankAccountServiceImpl.java:72)
+	at com.capgemini.bankapp.client.BankAccountClient.main(BankAccountClient.java:43)
+2019-03-28 18:26:49 -1 - [main] ERROR com.capgemini.bankapp.service.impl.BankAccountServiceImpl  -Exception 
+com.capgemini.bankapp.exception.BankAccountNotFoundException: BankAccount doesnt exist
+	at com.capgemini.bankapp.service.impl.BankAccountServiceImpl.deposit(BankAccountServiceImpl.java:51)
+	at com.capgemini.bankapp.service.impl.BankAccountServiceImpl.fundTransfer(BankAccountServiceImpl.java:85)
+	at com.capgemini.bankapp.client.BankAccountClient.main(BankAccountClient.java:81)
